@@ -8,7 +8,7 @@ tags: ["voice recognition", "home automation", "AI"]
 # Smart Mirror
 ### Smart Mirror is a simple IOT technology, that allows you to interact with an AI system that can help human to make your home automatic.
 
-![alt text](<../assets/Smurf mirror.jpeg>)
+![alt text](</chirpy-franklin_jaya/assets/Smurf mirror.jpeg>)
 
 ## Smart Mirror Main Team 
 - **Name:** Alvin, Apryadi, Deny, Franklin

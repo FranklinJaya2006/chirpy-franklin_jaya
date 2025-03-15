@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: assets/22a3e24b0d0c74c2e8d335860ce2cff2.jpg
+avatar: /chirpy-franklin_jaya/assets/22a3e24b0d0c74c2e8d335860ce2cff2.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
