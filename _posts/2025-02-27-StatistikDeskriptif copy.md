@@ -35,7 +35,7 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
     - **Variansi Populasi (σ):**
 
     Berikut ini rumus menghitung variansi populasi:
-    <img src="/assets/populasi.png"/>
+    <img src="/assets/populasi.png" alt="Mean"/>
 
     **Keterangan:**
     - \( x_i \): Nilai data ke-i  
@@ -47,7 +47,7 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
     - **Variansi Sampel (s):**  
 
     Berikut ini rumus menghitung variansi sampel:
-    <img src="/assets/sample.png"/>
+    <img src="/assets/sample.png" alt="Mean"/>
 
     **Keterangan:**
     - \( x_i \): Nilai data ke-i  
@@ -63,7 +63,7 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
     - **Standar Deviasi Populasi (σ):**
 
     Berikut ini rumus menghitung standar deviasi populasi:
-    <img src="/assets/stdevp.png"/>
+    <img src="/assets/stdevp.png" alt="Mean"/>
 
     **Keterangan:**
     - \( x_i \): Nilai data ke-i  
@@ -75,7 +75,7 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
     - **Standar Deviasi Sampel (s):**  
 
     Berikut ini rumus menghitung standar deviasi sampel:
-    <img src="/assets/stdevs.png"/>
+    <img src="/assets/stdevs.png" alt="Mean"/>
 
     **Keterangan:**
     - \( x_i \): Nilai data ke-i  
