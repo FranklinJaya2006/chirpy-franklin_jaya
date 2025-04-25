@@ -18,7 +18,7 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
 2. **Median:**
 > Median adalah nilai tengah dari sekumpulan data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai tengah. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah.
 
-<img src="/assets/Median.png" alt="">
+<img src="/assets/Median.png" alt="median">
 
 3. **Modus:**
 > Jumlah data yang paling sering muncul. Untuk mengetahui mana yang menjadi modus dari sejumlah data, kita dapat menghitung frekuensi kemunculan setiap nilai, lalu mengambil nilai yang muncul paling banyak.
