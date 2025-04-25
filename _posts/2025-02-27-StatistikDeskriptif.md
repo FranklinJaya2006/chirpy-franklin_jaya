@@ -8,26 +8,79 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
 ## Statistik Deskriptif
 #### Cabang dari statistik yang berfungsi untuk mengorganisir sekumpulan data sehingga data yang kita dapatkan dapat lebih mudah dipahami, seringkali statistik deskriptif membantu dalam bidang bidang data science dan machine learning, serta statistik deskriptif dapat menjadi acuan dalam membantu penelitian mengamnil keputusan berbasis data.
 
-## Contoh jenis jenis Statistik Deskriptif
-- **Mean:**
-> *Hasil rata-rata dari sekumpulan data. Kita dapat menghitung **mean** dengan cara menjumlahkan seluruh data yang ada, lalu membaginya dengan jumlah data tersebut.*
+### Pada statistika deskriptif terdapat 2 pengukuran utama yang biasa digunakan untuk menganalisa data, yang pertama ada Ukuran pemusatan atau *Measures of Central Tendency*, ini adalah jenis ukuran yang digunakan untuk mengetahui nilai yang mewakili atau menjadi pusat dari sekumpulan data.
+
+## Jenis jenis ukuran pemusatan Statistik Deskriptif: 
+1. **Mean:**
+> Hasil rata-rata dari sekumpulan data. Kita dapat menghitung mean dengan cara menjumlahkan seluruh data yang ada, lalu membaginya dengan jumlah data tersebut.
+
 <img src="/assets/Mean.png" alt="Mean">
 
-- **Median:**
-> *Median adalah nilai tengah dari sekumpulan data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai tengah. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah.*
+2. **Median:**
+> Median adalah nilai tengah dari sekumpulan data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai tengah. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah.
+
 <img src="/assets/Median.png">
 
-- **Modus:**
-> *Jumlah data yang paling sering muncul. Untuk mengetahui mana yang menjadi *modus* dari sejumlah data, kita dapat menghitung frekuensi kemunculan setiap nilai, lalu mengambil nilai yang muncul paling banyak.*
+3. **Modus:**
+> Jumlah data yang paling sering muncul. Untuk mengetahui mana yang menjadi modus dari sejumlah data, kita dapat menghitung frekuensi kemunculan setiap nilai, lalu mengambil nilai yang muncul paling banyak.
+
 <img src="/assets/Mode.png"/>
 
+### Selain itu, pada statistika deskriptif terdapat ukuran penyebaran yang disebut *Measures of Dispersion*. Ini adalah cara untuk mengukur seberapa besar variasi atau sebaran data dalam suatu kumpulan data. Ini berfungsi untuk membantu kita memahami apakah data yang kita kumpulkan cenderung berkumpul di sekitar nilai tertentu (misalnya rata-rata) atau tersebar jauh dari nilai tersebut.
 
+## Jenis jenis ukuran penyebaran Statistik Deskriptif: 
+1. **Variansi:**
+> Cara untuk menggambarkan bagaimana sebuah data dapat menyebar jauh dari hasil mean.
 
+    Variansi terbagi atas 2 jenis, yaitu:
+    - **Variansi Populasi (σ):**
 
+    Berikut ini rumus menghitung variansi populasi:
+    <img src="/assets/populasi.png"/>
 
+    **Keterangan:**
+    - \( x<sup>i</sup> \): Nilai data ke-i  
+    - \( μ \): Rata-rata populasi  
+    - \( ∑ \): Simbol penjumlahan (menjumlahkan semua nilai dari i=1 sampai N)
+    - \( *N* \): Jumlah total data dalam populasi  
+    - \(Variansi Populasi (σ²)\): menggunakan pembagi N, karena memperhitungkan seluruh data
 
+    - **Variansi Sampel (s):**  
 
+    Berikut ini rumus menghitung variansi sampel:
+    <img src="/assets/sample.png"/>
 
+    **Keterangan:**
+    - \( x<sup>i</sup> \): Nilai data ke-i  
+    - \( x̄ \): Rata-rata sampel
+     - \( ∑ \): Simbol penjumlahan (menjumlahkan semua nilai dari i=1 sampai N)
+    - \( *n* \): Jumlah total data dalam sampel  
+    - \(Variansi Sampel (s²)\) menggunakan pembagi n − 1, agar hasilnya tidak bias (disebut **koreksi Bessel**) 
 
+2. **Standar deviasi:**
+> Cara untuk menggambarkan seberapa besar sebaran atau variasi data terhadap nilai rata-ratanya (mean).
 
+    Standar Deviasi terbagi atas 2 jenis, yaitu:
+    - **Standar Deviasi Populasi (σ):**
 
+    Berikut ini rumus menghitung variansi populasi:
+    <img src="/assets/.png"/>
+
+    **Keterangan:**
+    - \( x<sup>i</sup> \): Nilai data ke-i  
+    - \( μ \): Rata-rata populasi  
+    - \( ∑ \): Simbol penjumlahan (menjumlahkan semua nilai dari i=1 sampai N)
+    - \( *N* \): Jumlah total data dalam populasi  
+    - \(Variansi Populasi (σ²)\): menggunakan pembagi N, karena memperhitungkan seluruh data
+
+    - **Standar Deviasi Sampel (s):**  
+
+    Berikut ini rumus menghitung variansi sampel:
+    <img src="/assets/.png"/>
+
+    **Keterangan:**
+    - \( x<sup>i</sup> \): Nilai data ke-i  
+    - \( x̄ \): Rata-rata sampel
+     - \( ∑ \): Simbol penjumlahan (menjumlahkan semua nilai dari i=1 sampai N)
+    - \( *n* \): Jumlah total data dalam sampel  
+    - \(Variansi Sampel (s²)\) menggunakan pembagi n − 1, agar hasilnya tidak bias (disebut **koreksi Bessel**) 
