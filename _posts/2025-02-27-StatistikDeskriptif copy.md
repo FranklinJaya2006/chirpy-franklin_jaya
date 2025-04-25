@@ -5,8 +5,7 @@ categories: [Mean, Median, Mode, Standar Deviasi, Statistik Deskriptif, Kuartil]
 tags: ["Statitik dan Probabilitas", "Statistik", "R"]
 ---
 
-## Statistik Deskriptif
-##### Cabang dari statistik yang berfungsi untuk mengorganisir sekumpulan data sehingga data yang kita dapatkan dapat lebih mudah dipahami, seringkali statistik deskriptif membantu dalam bidang bidang data science dan machine learning, serta statistik deskriptif dapat menjadi acuan dalam membantu penelitian mengamnil keputusan berbasis data.
+#### Statistik Deskriptif adalah cabang dari statistik yang berfungsi untuk mengorganisir sekumpulan data sehingga data yang kita dapatkan dapat lebih mudah dipahami, seringkali statistik deskriptif membantu dalam bidang bidang data science dan machine learning, serta statistik deskriptif dapat menjadi acuan dalam membantu penelitian mengamnil keputusan berbasis data.
 
 ### Pada statistika deskriptif terdapat 2 pengukuran utama yang biasa digunakan untuk menganalisa data, yang pertama ada Ukuran pemusatan atau *Measures of Central Tendency*, ini adalah jenis ukuran yang digunakan untuk mengetahui nilai yang mewakili atau menjadi pusat dari sekumpulan data.
 
@@ -84,6 +83,9 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
      - \( ∑ \): Simbol penjumlahan (menjumlahkan semua nilai dari i=1 sampai N)
     - \( n \): Jumlah total data dalam sampel  
     - \(Variansi Sampel (s²)\) menggunakan pembagi n − 1, agar hasilnya tidak bias 
+
+## Tugas Instalasi
+##### Mahasiswa diminta melakukan instalasi R untuk memudahkan proses mengerjakan tugas minggu depan
 
 ## Kesimpulan
 ##### Statistik deskriptif merupakan alat untuk mengorganisir data secara ringkas dan informatif. Dengan menggunakan ukuran pemusatan seperti mean, median, dan modus, kita dapat mengetahui nilai yang mewakili kumpulan data. Sementara itu, dengan ukuran penyebaran seperti variansi dan standar deviasi, kita dapat memahami seberapa besar persebaran data terhadap nilai pusatnya.
