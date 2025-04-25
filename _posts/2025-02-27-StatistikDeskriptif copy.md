@@ -18,12 +18,12 @@ tags: ["Statitik dan Probabilitas", "Statistik", "R"]
 2. **Median:**
 > Median adalah nilai tengah dari sekumpulan data yang telah diurutkan dari yang terkecil ke terbesar. Jika jumlah data ganjil, median adalah nilai tengah. Jika jumlah data genap, median adalah rata-rata dari dua nilai tengah.
 
-<img src="/assets/Median.png">
+<img src="/assets/Median.png" alt="">
 
 3. **Modus:**
 > Jumlah data yang paling sering muncul. Untuk mengetahui mana yang menjadi modus dari sejumlah data, kita dapat menghitung frekuensi kemunculan setiap nilai, lalu mengambil nilai yang muncul paling banyak.
 
-<img src="/assets/Mode.png"/>
+<img src="/assets/Mode.png" alt=""/>
 
 ### Selain itu, pada statistika deskriptif terdapat ukuran penyebaran yang disebut *Measures of Dispersion*. Ini adalah cara untuk mengukur seberapa besar variasi atau sebaran data dalam suatu kumpulan data. Ini berfungsi untuk membantu kita memahami apakah data yang kita kumpulkan cenderung berkumpul di sekitar nilai tertentu (misalnya rata-rata) atau tersebar jauh dari nilai tersebut.
 
