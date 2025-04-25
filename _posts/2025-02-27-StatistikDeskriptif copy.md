@@ -1,7 +1,7 @@
 ---
 title: "Week 1 Statistik Deskriptif"
 date: 2025-02-27 10:00:00 +0700
-categories: [Mean, Median, Mode, Standar Deviasi, Statistik Deskriptif, Kuartil]
+categories: [Mean, Median, Mode, Standar Deviasi, Statistik Deskriptif, Variansi]
 tags: ["Statitik dan Probabilitas", "Statistik", "R"]
 ---
 
