@@ -26,7 +26,6 @@ Korelasi mengukur **kekuatan** dan **arah hubungan linier** antara dua variabel 
     - [Karakteristik](#karakteristik)
     - [Langkah Perhitungan di Excel](#langkah-perhitungan-di-excel)
     - [Contoh Kasus Spearman](#contoh-kasus-spearman)
-- [Kesimpulan](#kesimpulan)
 
 ---
 
