@@ -107,7 +107,7 @@ Seorang dosen mengklaim bahwa rata-rata nilai ujian mahasiswa adalah 75. Kita in
 - Cara menghitung bisa melalui kalkulator statistik atau Excel:  
   `=T.DIST.2T(ABS(t), df)`
 
-### 5. Bandingkan dengan p-value dengan 0.05
+### 5. Bandingkan p-value dengan 0.05
 - Karena p-value > 0.05 → Gagal menolak H₀
 
 ## Kesimpulan
