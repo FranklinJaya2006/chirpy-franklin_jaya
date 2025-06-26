@@ -5,97 +5,193 @@ categories: [Statistik, Regresi, R]
 tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 ---
 
-# Linear Regression
+# 📘 Lecture 9: Linear Regression
 
-## Daftar Isi
+## 📑 Daftar Isi
 
 1. [Tujuan Pembelajaran](#tujuan-pembelajaran)
-2. [Apa Itu Regresi?](#apa-itu-regresi)
-3. [Pengantar Regresi](#pengantar-regresi)
-4. [Terminologi dalam Regresi](#terminologi-dalam-regresi)
-5. [Alasan Menggunakan Regresi Linear](#alasan-menggunakan-regresi-linear)
-6. [Model Probabilistik Linear](#model-probabilistik-linear)
-7. [Interpretasi Grafis](#interpretasi-grafis)
-8. [Contoh Kasus Linear Regression](#contoh-kasus-linear-regression)
-9. [Estimasi Parameter Model](#estimasi-parameter-model)
-10. [Prediksi dan Residual](#prediksi-dan-residual)
-11. [Multiple Linear Regression](#multiple-linear-regression)
-12. [Variabel Independen Kategorik](#variabel-independen-kategorik)
-13. [Uji Hipotesis (Omnibus Test)](#uji-hipotesis-omnibus-test)
-14. [Formulasi ANOVA untuk Omnibus Test](#formulasi-anova-untuk-omnibus-test)
-15. [F-Test untuk Subset Variabel](#f-test-untuk-subset-variabel)
-16. [Uji Hipotesis Koefisien Individual](#uji-hipotesis-koefisien-individual)
-17. [Pemeriksaan Asumsi Model](#pemeriksaan-asumsi-model)
-18. [Fixed Effects vs Random Effects](#fixed-effects-vs-random-effects)
+2. [Pengantar Regresi](#pengantar-regresi)
+3. [Terminologi dalam Regresi](#terminologi-dalam-regresi)
+4. [Mengapa Regresi Linear?](#mengapa-regresi-linear)
+5. [Model Probabilistik Linear](#model-probabilistik-linear)
+6. [Interpretasi Grafis](#interpretasi-grafis)
+7. [Contoh Model Regresi](#contoh-model-regresi)
+8. [Estimasi Parameter Model](#estimasi-parameter-model)
+9. [Prediksi dan Residual](#prediksi-dan-residual)
+10. [Multiple Linear Regression](#multiple-linear-regression)
+11. [Variabel Independen Kategorik](#variabel-independen-kategorik)
+12. [Uji Hipotesis - Omnibus Test](#uji-hipotesis---omnibus-test)
+13. [Formulasi ANOVA untuk Omnibus Test](#formulasi-anova-untuk-omnibus-test)
+14. [F-Test untuk Subset Variabel](#f-test-untuk-subset-variabel)
+15. [Uji Koefisien Individual](#uji-koefisien-individual)
+16. [Pemeriksaan Asumsi Model](#pemeriksaan-asumsi-model)
+17. [Fixed vs Random Effects](#fixed-vs-random-effects)
 
 ---
 
-## Tujuan Pembelajaran
+## 🎯 Tujuan Pembelajaran
 
-- Memahami dasar regresi linear dari sudut pandang probabilistik.
-- Mengestimasi parameter dan melakukan uji hipotesis dalam model linear.
-- Mengimplementasikan regresi linear di R.
-
----
-
-## Apa Itu Regresi?
-
-- **Regresi** adalah teknik statistik yang digunakan untuk memodelkan dan menganalisis hubungan antara satu variabel dependen (**Y**) dan satu atau lebih variabel independen (**X**).
-- Tujuannya adalah untuk:
-  - Menjelaskan bagaimana **Y dipengaruhi oleh X**
-  - Melakukan **prediksi** nilai Y berdasarkan nilai X
-  - Melakukan **estimasi parameter**
-  - Melakukan **pengujian hipotesis**
-  - Memodelkan hubungan **kausalitas**
-
-> 🔍 Intinya: Jika kamu tahu nilai X, maka kamu bisa memperkirakan nilai Y berdasarkan model regresi yang terbentuk.
+- Memahami konsep regresi linear dari perspektif probabilistik.
+- Melakukan estimasi parameter dan uji hipotesis pada model linear.
+- Mengimplementasikan regresi linear menggunakan R.
 
 ---
 
-## Pengantar Regresi
+## 📊 Pengantar Regresi
 
-- Regresi digunakan untuk menganalisis dan memodelkan data numerik.
-- Memanfaatkan hubungan antara dua atau lebih variabel untuk membuat prediksi atau estimasi.
-- Aplikasi: prediksi, estimasi, uji hipotesis, dan pemodelan kausal.
-
----
-
-## Terminologi dalam Regresi
-
-- **Y**: Variabel Dependen / Outcome / Respon.
-- **X**: Variabel Independen / Prediktor / Penjelas.
+- Digunakan untuk memodelkan dan menganalisis data numerik.
+- Memanfaatkan hubungan antara dua atau lebih variabel.
+- Aplikasi: prediksi, estimasi, pengujian hipotesis, dan pemodelan kausal.
 
 ---
 
-## Alasan Menggunakan Regresi Linear
+## 🧠 Terminologi dalam Regresi
 
-- Misal kita ingin memodelkan Y berdasarkan X1, X2, X3.
-- Data tidak cukup untuk memodelkan f(X1, X2, X3) secara bebas.
-- Maka kita batasi bentuk f menjadi linear:  
-  `Y = β0 + β1X1 + β2X2 + β3X3`
+- **Y**: Variabel dependen / outcome / respon.
+- **X**: Variabel independen / prediktor / penjelas.
 
 ---
 
-## Model Probabilistik Linear
+## ❓ Mengapa Regresi Linear?
 
-- Hubungan Y dan X tidak deterministik, ada error acak `ε ~ N(0, σ²)`
-- Model:  
-  `Y = β0 + β1X + ε`
-- Maka:
-  - `E(Y | X=x*) = β0 + β1x*`
-  - `Var(Y | X=x*) = σ²`
+- Misal kita ingin memodelkan Y berdasarkan X1, X2, X3:  
+  `Y = f(X1, X2, X3)`  
+- Karena keterbatasan data, f biasanya diaproksimasi menjadi bentuk linear:  
+  `Y = β₀ + β₁X₁ + β₂X₂ + β₃X₃`
 
 ---
 
-## Interpretasi Grafis
+## 📐 Model Probabilistik Linear
 
-- Untuk X tertentu (misalnya tinggi), μ_Y|X adalah rata-rata Y (misalnya berat).
-- Tiap titik Y menyebar secara normal di sekitar garis regresi.
+Model dasar:
+Y = β₀ + β₁X + ε, dengan ε ~ N(0, σ²)
+
+Implikasi:
+- E(Y | X=x*) = β₀ + β₁x*
+- Var(Y | X=x*) = σ²
 
 ---
 
-## Contoh Kasus Linear Regression
+## 📉 Interpretasi Grafis
 
-Diberikan model:
-```
-y = 7.5 + 0.5x, σ = 3
+- Untuk x tertentu (mis. tinggi badan), rata-rata Y (mis. berat) berada di garis regresi.
+- Y menyebar secara normal di sekitar garis regresi.
+
+---
+
+## 🧮 Contoh Model Regresi
+
+Model: `Y = 7.5 + 0.5x`, dengan σ = 3
+
+- Jika x = 20, maka E(Y | x=20) = 17.5
+- P(Y > 22 | x=20) = P(Z > (22 - 17.5)/3) = P(Z > 1.5) ≈ 0.067
+
+---
+
+## 🧾 Estimasi Parameter Model
+
+- Menggunakan metode **least squares**:
+β̂₀ = ȳ - β̂₁x̄
+SSE = Σ(yi - ŷi)²
+σ̂² = SSE / (n - 2)
+
+
+---
+
+## 🧩 Prediksi dan Residual
+
+- Nilai prediksi:  
+ŷᵢ = β̂₀ + β̂₁xᵢ  
+- Residual:  
+eᵢ = yᵢ - ŷᵢ  
+- Digunakan untuk menghitung SSE dan r²:
+r² = 1 - SSE/SST
+
+
+---
+
+## 🔢 Multiple Linear Regression
+
+Model:
+Y = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ + ε
+
+- βᵢ: efek parsial dari Xᵢ terhadap Y (dengan variabel lain konstan).
+
+---
+
+## 🧮 Variabel Independen Kategorik
+
+- Representasi dengan **dummy variable**
+- Jika ada 3 level (AA, AG, GG), maka butuh 2 dummy:
+x₁ = 1 jika AA, 0 lain
+x₂ = 1 jika AG, 0 lain
+
+
+---
+
+## 🧪 Uji Hipotesis - Omnibus Test
+
+- Tujuan: cek apakah ada X yang signifikan
+- Hipotesis:
+H₀: β₁ = β₂ = ... = βk = 0
+Hₐ: Minimal satu βᵢ ≠ 0
+
+- Statistik F:
+F = [R² / k] / [(1 - R²) / (n - k - 1)]
+
+
+---
+
+## 📊 Formulasi ANOVA untuk Omnibus Test
+
+| Sumber | df     | SS                         | MS     | F       |
+|--------|--------|----------------------------|--------|---------|
+| Regresi| k      | SSR = Σ(ŷᵢ - ȳ)²           | SSR/k  | MSR/MSE |
+| Error  | n - 2  | SSE = Σ(yᵢ - ŷᵢ)²          | SSE/n−2|         |
+| Total  | n - 1  | SST = Σ(yᵢ - ȳ)²           |        |         |
+
+---
+
+## 🧪 F-Test untuk Subset Variabel
+
+- Bandingkan dua model:
+- Full: semua prediktor
+- Reduced: subset dari prediktor
+- Statistik F:
+F = [(SSER - SSEF) / (k - l)] / [SSEF / (n - (k + 1))]
+
+
+---
+
+## 🧪 Uji Koefisien Individual
+
+- Gunakan **uji t**:
+H₀: β̂ᵢ = 0
+t = β̂ᵢ / se(β̂ᵢ)
+CI: β̂ᵢ ± tₐ/2 × se(β̂ᵢ)
+
+
+---
+
+## 🔍 Pemeriksaan Asumsi Model
+
+- Cek:
+- Outlier
+- Normalitas residual
+- Homoskedastisitas
+- Independensi residual
+- Gunakan plot:
+- y vs xᵢ
+- QQ-plot residual
+- residual vs fitted
+- residual vs xᵢ
+
+---
+
+## 🧭 Fixed vs Random Effects
+
+- **Fixed Effects**: level variabel dipilih secara khusus.
+- **Random Effects**: level variabel merupakan sampel acak dari populasi besar.
+
+---
+
