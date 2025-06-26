@@ -5,7 +5,7 @@ categories: [Statistik, Regresi, R]
 tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 ---
 
-# 📘 Lecture 9: Linear Regression
+# 📘 Linear Regression
 
 ## 📑 Daftar Isi
 
