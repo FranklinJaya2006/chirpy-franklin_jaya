@@ -12,7 +12,7 @@ tags: ["Statitik dan Probabilitas", "Distribusi Data", "R"]
   - [Populasi](#populasi)
   - [Sampel](#sampel)
   - [Alasan Menggunakan Sampel](#alasan-menggunakan-sampel)
-- [Kapan kita dapat dikatakan menggunakan sampel atau populasi?](#kapan-kita-dapat-dikatakan-mengggunakan-sampel-atau-populasi)
+- [Kapan kita dapat dikatakan menggunakan sampel atau populasi?](#kapan-kita-dapat-dikatakan-menggunakan-sampel-atau-populasi)
   - [Populasi](#populasi-1)
   - [Sampel](#sampel-1)
 - [Beberapa Istilah Penting](#beberapa-istilah-penting)
@@ -24,8 +24,8 @@ tags: ["Statitik dan Probabilitas", "Distribusi Data", "R"]
   - [2. Ambil Data Sampel](#2-ambil-data-sampel)
   - [3. Hitung Statistik Sampel](#3-hitung-statistik-sampel)
   - [4. Hitung p-value](#4-hitung-p-value)
-  - [5. Bandingkan dengan α = 0.05](#5-bandingkan-dengan--005)
-  - [Kesimpulan](#-kesimpulan)
+  - [5. Bandingkan dengan 0.05](#5-bandingkan-dengan-005)
+  - [Kesimpulan](#kesimpulan)
 
 ---
 
@@ -107,9 +107,9 @@ Seorang dosen mengklaim bahwa rata-rata nilai ujian mahasiswa adalah 75. Kita in
 - Cara menghitung bisa melalui kalkulator statistik atau Excel:  
   `=T.DIST.2T(ABS(t), df)`
 
-### 5. Bandingkan dengan α = 0.05
+### 5. Bandingkan dengan 0.05
 - Karena p-value > 0.05 → Gagal menolak H₀
 
-### Kesimpulan
+## Kesimpulan
 Berdasarkan data sampel, tidak cukup bukti untuk menolak klaim bahwa rata-rata nilai ujian = 75.  
 Rata-rata 74.04 masih wajar jika klaim 75 itu benar.
