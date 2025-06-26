@@ -5,9 +5,9 @@ categories: [Statistik, Regresi, R]
 tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 ---
 
-# 📘 Linear Regression
+# Linear Regression
 
-## 📑 Daftar Isi
+## Daftar Isi
 
 1. [Tujuan Pembelajaran](#tujuan-pembelajaran)
 2. [Apa Itu Regresi?](#apa-itu-regresi)
