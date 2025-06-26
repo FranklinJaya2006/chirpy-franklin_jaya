@@ -24,7 +24,7 @@ tags: ["Statitik dan Probabilitas", "Distribusi Data", "R"]
   - [2. Ambil Data Sampel](#2-ambil-data-sampel)
   - [3. Hitung Statistik Sampel](#3-hitung-statistik-sampel)
   - [4. Hitung p-value](#4-hitung-p-value)
-  - [5. Bandingkan dengan 0.05](#5-bandingkan-dengan-005)
+  - [5. Bandingkan dengan 0.05](#5-bandingkan-p-value-dengan-005)
   - [Kesimpulan](#kesimpulan)
 
 ---
@@ -107,7 +107,7 @@ Seorang dosen mengklaim bahwa rata-rata nilai ujian mahasiswa adalah 75. Kita in
 - Cara menghitung bisa melalui kalkulator statistik atau Excel:  
   `=T.DIST.2T(ABS(t), df)`
 
-### 5. Bandingkan dengan 0.05
+### 5. Bandingkan dengan p-value dengan 0.05
 - Karena p-value > 0.05 → Gagal menolak H₀
 
 ## Kesimpulan
