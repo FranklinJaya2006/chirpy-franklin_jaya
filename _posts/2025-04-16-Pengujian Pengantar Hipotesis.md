@@ -43,7 +43,7 @@ tags: ["Statitik dan Probabilitas", "Distribusi Data", "R"]
 - Mengamati seluruh populasi membutuhkan waktu, biaya, dan tenaga besar.
 - Sampel memungkinkan analisis yang efisien dan cukup akurat.
 
-## Kapan kita dapat dikatakan mengggunakan sampel atau populasi?
+## Kapan kita dapat dikatakan menggunakan sampel atau populasi?
 
 ### Populasi
 - Jika kita mengambil secara keseluruhan, contoh jika saya blg kami mewawancarai seluruh mahasiswa UC Makassar.

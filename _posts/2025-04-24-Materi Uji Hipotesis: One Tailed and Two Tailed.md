@@ -6,6 +6,7 @@ tags: ["Statitik dan Probabilitas", "Distribusi Data", "R"]
 --- 
 
 ## Daftar Isi
+## Daftar Isi
 - [1. Pendahuluan](#1-pendahuluan)
 - [2. Prasyarat Uji Hipotesis](#2-prasyarat-uji-hipotesis)
 - [3. Uji One-Tailed](#3-uji-one-tailed)
@@ -20,7 +21,7 @@ tags: ["Statitik dan Probabilitas", "Distribusi Data", "R"]
   - [4.3 Contoh Two-Tailed (T-Test)](#43-contoh-two-tailed-t-test)
   - [4.4 Contoh Two-Tailed (Z-Test)](#44-contoh-two-tailed-z-test)
 - [5. Implementasi di Excel](#5-implementasi-di-excel)
-- [6. Kesimpulan](#6-kesimpulan)
+- [6. Kesimpulan](#kesimpulan)
 
 ## 1. Pendahuluan
 Uji hipotesis adalah metode statistik untuk menguji klaim atau asumsi terhadap parameter populasi berdasarkan data sampel.  
