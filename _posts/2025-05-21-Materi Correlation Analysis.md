@@ -5,7 +5,7 @@ categories: [Pearson, Spearman, Korelasi]
 tags: ["Statistik dan Probabilitas", "Distribusi Data", "R"]
 ---
 
-# 📊 Correlation Analysis
+# Correlation Analysis
 
 ---
 
@@ -14,7 +14,7 @@ Korelasi mengukur **kekuatan** dan **arah hubungan linier** antara dua variabel 
 
 ---
 
-## 📚 Daftar Isi
+## Daftar Isi
 - [Jenis Korelasi](#jenis-korelasi)
   - [Korelasi Pearson](#1-korelasi-pearson)
     - [Deskripsi](#deskripsi)

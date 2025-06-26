@@ -5,9 +5,9 @@ categories: [Statistik, Regresi, R]
 tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 ---
 
-# 📘 Lecture 9: Linear Regression
+# Lecture 9: Linear Regression
 
-## 📑 Daftar Isi
+## Daftar Isi
 
 1. [Tujuan Pembelajaran](#tujuan-pembelajaran)
 2. [Pengantar Regresi](#pengantar-regresi)
@@ -29,7 +29,7 @@ tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 
 ---
 
-## 🎯 Tujuan Pembelajaran
+## Tujuan Pembelajaran
 
 - Memahami konsep regresi linear dari perspektif probabilistik.
 - Melakukan estimasi parameter dan uji hipotesis pada model linear.
@@ -37,7 +37,7 @@ tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 
 ---
 
-## 📊 Pengantar Regresi
+## Pengantar Regresi
 
 - Digunakan untuk memodelkan dan menganalisis data numerik.
 - Memanfaatkan hubungan antara dua atau lebih variabel.
@@ -45,14 +45,14 @@ tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 
 ---
 
-## 🧠 Terminologi dalam Regresi
+## Terminologi dalam Regresi
 
 - **Y**: Variabel dependen / outcome / respon.
 - **X**: Variabel independen / prediktor / penjelas.
 
 ---
 
-## ❓ Mengapa Regresi Linear?
+## Mengapa Regresi Linear?
 
 - Misal kita ingin memodelkan Y berdasarkan X1, X2, X3:  
   `Y = f(X1, X2, X3)`  
@@ -61,7 +61,7 @@ tags: ["Linear Regression", "Probabilistik", "R", "Statistik"]
 
 ---
 
-## 📐 Model Probabilistik Linear
+## Model Probabilistik Linear
 
 Model dasar:
 Y = β₀ + β₁X + ε, dengan ε ~ N(0, σ²)
@@ -72,14 +72,14 @@ Implikasi:
 
 ---
 
-## 📉 Interpretasi Grafis
+## Interpretasi Grafis
 
 - Untuk x tertentu (mis. tinggi badan), rata-rata Y (mis. berat) berada di garis regresi.
 - Y menyebar secara normal di sekitar garis regresi.
 
 ---
 
-## 🧮 Contoh Model Regresi
+## Contoh Model Regresi
 
 Model: `Y = 7.5 + 0.5x`, dengan σ = 3
 
@@ -88,7 +88,7 @@ Model: `Y = 7.5 + 0.5x`, dengan σ = 3
 
 ---
 
-## 🧾 Estimasi Parameter Model
+## Estimasi Parameter Model
 
 - Menggunakan metode **least squares**:
 β̂₀ = ȳ - β̂₁x̄
@@ -98,7 +98,7 @@ SSE = Σ(yi - ŷi)²
 
 ---
 
-## 🧩 Prediksi dan Residual
+## Prediksi dan Residual
 
 - Nilai prediksi:  
 ŷᵢ = β̂₀ + β̂₁xᵢ  
@@ -110,7 +110,7 @@ r² = 1 - SSE/SST
 
 ---
 
-## 🔢 Multiple Linear Regression
+## Multiple Linear Regression
 
 Model:
 Y = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ + ε
@@ -119,7 +119,7 @@ Y = β₀ + β₁X₁ + β₂X₂ + ... + βₙXₙ + ε
 
 ---
 
-## 🧮 Variabel Independen Kategorik
+## Variabel Independen Kategorik
 
 - Representasi dengan **dummy variable**
 - Jika ada 3 level (AA, AG, GG), maka butuh 2 dummy:
@@ -129,7 +129,7 @@ x₂ = 1 jika AG, 0 lain
 
 ---
 
-## 🧪 Uji Hipotesis - Omnibus Test
+## Uji Hipotesis - Omnibus Test
 
 - Tujuan: cek apakah ada X yang signifikan
 - Hipotesis:
@@ -142,7 +142,7 @@ F = [R² / k] / [(1 - R²) / (n - k - 1)]
 
 ---
 
-## 📊 Formulasi ANOVA untuk Omnibus Test
+## Formulasi ANOVA untuk Omnibus Test
 
 | Sumber | df     | SS                         | MS     | F       |
 |--------|--------|----------------------------|--------|---------|
@@ -152,7 +152,7 @@ F = [R² / k] / [(1 - R²) / (n - k - 1)]
 
 ---
 
-## 🧪 F-Test untuk Subset Variabel
+## F-Test untuk Subset Variabel
 
 - Bandingkan dua model:
 - Full: semua prediktor
@@ -163,7 +163,7 @@ F = [(SSER - SSEF) / (k - l)] / [SSEF / (n - (k + 1))]
 
 ---
 
-## 🧪 Uji Koefisien Individual
+## Uji Koefisien Individual
 
 - Gunakan **uji t**:
 H₀: β̂ᵢ = 0
@@ -173,7 +173,7 @@ CI: β̂ᵢ ± tₐ/2 × se(β̂ᵢ)
 
 ---
 
-## 🔍 Pemeriksaan Asumsi Model
+## Pemeriksaan Asumsi Model
 
 - Cek:
 - Outlier
@@ -188,7 +188,7 @@ CI: β̂ᵢ ± tₐ/2 × se(β̂ᵢ)
 
 ---
 
-## 🧭 Fixed vs Random Effects
+## Fixed vs Random Effects
 
 - **Fixed Effects**: level variabel dipilih secara khusus.
 - **Random Effects**: level variabel merupakan sampel acak dari populasi besar.

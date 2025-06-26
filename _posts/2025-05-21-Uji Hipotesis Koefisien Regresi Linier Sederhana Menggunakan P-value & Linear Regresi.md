@@ -5,12 +5,11 @@ categories: [derajat bebas, p-value, hipotesis, variansi dan galat]
 tags: ["Statistik dan Probabilitas", "Distribusi Data", "R"]
 ---
 
-# 📊 Uji Hipotesis Koefisien Regresi Linier Sederhana Menggunakan P-value  
-**Universitas Ciputra Makassar – 21 Mei 2025**
+# Uji Hipotesis Koefisien Regresi Linier Sederhana Menggunakan P-value  
 
 ---
 
-## 📑 Daftar Isi
+## Daftar Isi
 1. [Data Observasi](#1-data-observasi)  
 2. [Langkah-Langkah Uji Hipotesis](#2-langkah-langkah-uji-hipotesis)  
    - [a. Hipotesis](#a-hipotesis)  
